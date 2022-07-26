@@ -57,7 +57,6 @@ def writeEmail():
     pyautogui.hotkey('ctrl', 'enter')
 
 def downloadDatabase():
-
     # trocar janela pro browser
     pyautogui.hotkey('alt', 'tab')
 
@@ -84,7 +83,6 @@ def downloadDatabase():
     # ATENÇÃO: sua pasta padrão para downloads deve ser C:/Users/seu_user/Downloads
     # aperta em 'Salvar' quando a janela do Explorador de Arquivos é chamada
     pyautogui.click(750, 558)
-
 
 def getQuantidadeVendas(tabela):
     return tabela['Quantidade'].sum()
