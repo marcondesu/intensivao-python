@@ -4,13 +4,13 @@ import pandas as pd
 def main():
     # este projeto foi feito para ser executado pelo terminal do windows, também pode ser executado pelo terminal interno do seu IDE
     # quando for executar, o browser deve estar em segundo plano por conta do alt+tab da função DownloadDatabase
-    # downloadDatabase()
+    downloadDatabase()
     writeEmail()
 
 def writeEmail():
-    print('antes')
+    # espera até terminar de baixar o arquivo e o lê
+    time.sleep(3)
     tabela = pd.read_excel(r'C:/Users/user/Downloads/Vendas - Dez.xlsx')
-    print('depois')
 
     # variável que contém o e-mail destinatário
     email = 'rkatchau@gmail.com'
