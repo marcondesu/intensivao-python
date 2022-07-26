@@ -13,7 +13,7 @@ def writeEmail():
     tabela = pd.read_excel(r'C:/Users/user/Downloads/Vendas - Dez.xlsx')
 
     # variável que contém o e-mail destinatário
-    email = 'rkatchau@gmail.com'
+    email = ''
 
     faturamento = getFaturamento(tabela)
     quantidade_de_vendas = getQuantidadeVendas(tabela)
